@@ -20,9 +20,12 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/login",
+					"raw": "64.227.10.104:8080/login",
 					"host": [
-						"localhost"
+						"64",
+						"227",
+						"10",
+						"104"
 					],
 					"port": "8080",
 					"path": [
@@ -47,9 +50,12 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/register",
+					"raw": "64.227.10.104:8080/register",
 					"host": [
-						"localhost"
+						"64",
+						"227",
+						"10",
+						"104"
 					],
 					"port": "8080",
 					"path": [
@@ -77,9 +83,12 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/text2speach?text=Hi how are you",
+					"raw": "64.227.10.104:8080/text2speach?text=hi amir how are you ",
 					"host": [
-						"localhost"
+						"64",
+						"227",
+						"10",
+						"104"
 					],
 					"port": "8080",
 					"path": [
@@ -88,7 +97,7 @@
 					"query": [
 						{
 							"key": "text",
-							"value": "Hi how are you"
+							"value": "hi amir how are you "
 						}
 					]
 				}
@@ -113,9 +122,12 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/logout",
+					"raw": "64.227.10.104:8080/logout",
 					"host": [
-						"localhost"
+						"64",
+						"227",
+						"10",
+						"104"
 					],
 					"port": "8080",
 					"path": [
