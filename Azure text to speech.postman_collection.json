@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"username\" : \"amir@n2aj22a2f22i.com\",\n    \"password\" : \"1212\"\n}",
+					"raw": "{\n    \"username\" : \"kemathegentlegiant@gmail.com\",\n    \"password\" : \"Martina+4\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -42,7 +42,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"username\" : \"amir@n2aj22a2f22i.com\",\n    \"password\" : \"1212\"\n}",
+					"raw": "{\n    \"username\" : \"kemathegentlegiant@gmail.com\",\n    \"password\" : \"Martina+4\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -75,7 +75,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"username\" : \"amir@n2aj22a2f22i.com\",\n    \"password\" : \"1212\"\n}",
+					"raw": "{\n    \"username\" : \"kemathegentlegiant@gmail.com\",\n    \"password\" : \"Martina+4\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -83,7 +83,7 @@
 					}
 				},
 				"url": {
-					"raw": "64.227.10.104:8080/text2speach?text=hi amir how are you ",
+					"raw": "64.227.10.104:8080/text2speach?text=hi kema how are you ",
 					"host": [
 						"64",
 						"227",
@@ -97,7 +97,7 @@
 					"query": [
 						{
 							"key": "text",
-							"value": "hi amir how are you "
+							"value": "hi kema how are you "
 						}
 					]
 				}
