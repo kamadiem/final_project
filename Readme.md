@@ -81,7 +81,7 @@ GET /login
 
 
 http
-GET /text2speach
+GET /text2speech
 ```
 | Parameter | Type | Description |
 | :--- | :--- | :--- |

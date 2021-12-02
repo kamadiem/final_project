@@ -6,8 +6,8 @@ const { Buffer } = require('buffer');
 const { PassThrough } = require('stream');
 const fs = require('fs');
 
-// Route: /auth/Text2Speach
-class TextToSpeach {
+// Route: /auth/Text2speech
+class TextTospeech {
     constructor() {
         this.response = {
             message: "ok"
@@ -31,7 +31,7 @@ class TextToSpeach {
                 this.writeResponse(res)
             }
 
-            // connect the file path and text to Azure text to speach service
+            // connect the file path and text to Azure text to speech service
             // load Azure required params from .env file
             const audioStream = await this.textToSpeech(process.env.AZURE_KEY, process.env.AZURE_REGION, req.query.text);
             res.set({
@@ -56,7 +56,7 @@ class TextToSpeach {
 
 
 
-    // connect the file path and text to Azure text to speach service
+    // connect the file path and text to Azure text to speech service
     textToSpeech = async (key, region, text) => {
         // convert callback function to promise
         return new Promise((resolve, reject) => {
@@ -87,5 +87,5 @@ class TextToSpeach {
 
 }
 
-new TextToSpeach();
+new TextTospeech();
 module.exports = Router;

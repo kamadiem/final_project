@@ -10,7 +10,7 @@ const jwt = require("jsonwebtoken");
 // Load controllers
 const Login = require('./controller/auth/login');
 const Register = require('./controller/auth/register');
-const SpeachController = require('./controller/speach_controller');
+const SpeechController = require('./controller/speech_controller');
 
 // initialize the express app
 const app = express();
@@ -42,7 +42,7 @@ const authorization = (req, res, next) => {
 // Load routes
 app.use('/login', Login);
 app.use('/register', Register);
-app.use('/text2speach', authorization, SpeachController);
+app.use('/text2speech', authorization, SpeechController);
 
 
 app.get("/logout", authorization, (req, res) => {
