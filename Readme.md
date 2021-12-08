@@ -1,6 +1,6 @@
 # Azure Text to speech middleware 
 
-This project write base on Node js express to create API's with authentication to communicate with Microsoft Azure text to speech service
+This project is written on Node js express to create API's with authentication to communicate with Microsoft Azure text to speech service
 
 ## Features
 
@@ -8,9 +8,9 @@ This project write base on Node js express to create API's with authentication t
 - Users can Sign In
 - Users can pass the text to API and get stream speech audio of their text
 
-The Database is used for the project is Sqlite3 that generate automatically on server 
+The Database used for the project is Sqlite3 that generates automatically on server 
 
-## Tech
+## Tools
 My project uses a number of open-source projects to work properly:
 
 - [NodeJs] - The compiler of javascript
@@ -40,9 +40,9 @@ NODE_ENV=production node app
 
 ## API's usage
 
-To use API you can use Postman or Curl .....
+To use API you can use Postman or Curl .....(I decided to use Postman)
 
-There are 4 routes written for my project that users can use them 
+There are 4 routes written for my project that users can utilize 
 
 http
 GET /register
@@ -94,7 +94,7 @@ GET /text2speech
 
 ## Status Codes
 
-returns the following status codes in its API:
+This returns the following status codes in its API:
 
 | Status Code | Description |
 | :--- | :--- |
@@ -105,7 +105,7 @@ returns the following status codes in its API:
 | 500 | `INTERNAL SERVER ERROR` |
 
 
-Verify the deployment by navigating to your server address in
+This verifyies the deployment by navigating to your server address in
 your preferred browser.
 
 ```sh
