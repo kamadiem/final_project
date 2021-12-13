@@ -37,8 +37,12 @@ npm install --production
 NODE_ENV=production node app
 ```
 
-## API's usage
-To use API you can use Postman or Curl .....(I decided to use Postman)
+## API's usage via POSTMAN
+
+
+https://user-images.githubusercontent.com/89502069/145890477-cc634b3b-0976-42f6-8f5d-e973c2491475.mp4
+
+
 
 There are 4 routes written for my project that users can utilize 
 
