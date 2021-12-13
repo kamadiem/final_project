@@ -6,9 +6,9 @@ To start out you need to create or log into an Azure account. The service can be
 
 Link: https://azure.microsoft.com/en-us/services/cognitive-services/text-to-speech/#overview
 
-- In the Azure Portal search for “Speech Services” resource to create a cognitive service, speech service which includes API endpoints like the Text-to-speeck service
-- Select a name, subscription, location pricing tier and resource group
-- We will need the "Keys and Endpoint" information for the application (which is configured in the speech_controller.js file)
+- In the Azure Portal search for “Speech Services” resource to create a cognitive service, speech service which includes API endpoints like the Text-to-speeck service.
+- Select a name, subscription, location pricing tier and resource group as needed.
+- We will need the "Keys and Endpoint" information for the application (which is configured in the speech_controller.js file).
 
 ## Tools
 My project uses a number of open-source projects to work properly:
@@ -57,6 +57,7 @@ GET /login
   "message" : string,
 }
 ```
+![image](https://user-images.githubusercontent.com/89502069/145884416-3defe412-97b1-4a69-9558-f08b2425719d.png)
 
 
 http
