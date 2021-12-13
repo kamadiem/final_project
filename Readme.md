@@ -109,5 +109,9 @@ This returns the following status codes in its API:
 | 500 | `INTERNAL SERVER ERROR` |
 
 
+More info on Azure cognitive services can be found here ![image](https://user-images.githubusercontent.com/89502069/145892215-89224c32-ec43-4f87-b9bb-efa38bee1356.png)
+
+
+
 ## License
 MIT
