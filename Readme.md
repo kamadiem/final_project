@@ -38,8 +38,6 @@ NODE_ENV=production node app
 ```
 
 ## API's usage via POSTMAN
-
-
 https://user-images.githubusercontent.com/89502069/145890477-cc634b3b-0976-42f6-8f5d-e973c2491475.mp4
 
 
@@ -127,11 +125,5 @@ This returns the following status codes in its API:
 | 500 | `INTERNAL SERVER ERROR` |
 
 
-This verifyies the deployment by navigating to your server address in
-your preferred browser.
-
-```sh
-64.227.10.104:8080
-```
 ## License
 MIT
