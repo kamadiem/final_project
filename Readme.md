@@ -75,6 +75,7 @@ GET /register
   "message" : string,
 }
 ```
+![image](https://user-images.githubusercontent.com/89502069/145885068-b6b7d91a-8309-4a83-80ea-2fe3d9b8eab6.png)
 
 
 
@@ -89,6 +90,26 @@ GET /text2speech
 
     Audio stream output
 ```
+![image](https://user-images.githubusercontent.com/89502069/145885201-59d514c5-3fae-4c70-a381-abb1bc03de3b.png)
+
+http
+GET /logout
+```
+
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `username` | `string` | **Required**. your email |
+| `password` | `string` | **Required** |
+
+## Responses
+```javascript
+{
+  "message" : string,
+}
+```
+![image](https://user-images.githubusercontent.com/89502069/145885504-5b226332-5110-4f7e-abf0-15086bdbefec.png)
+
+
 
 ## Status Codes
 This returns the following status codes in its API:
