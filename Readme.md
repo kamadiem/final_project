@@ -109,8 +109,7 @@ This returns the following status codes in its API:
 | 500 | `INTERNAL SERVER ERROR` |
 
 
-More info on Azure cognitive services can be found here
-
+More info on Azure cognitive services can be found here - https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/
 
 ## License
 MIT
