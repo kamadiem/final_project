@@ -19,23 +19,7 @@ My project uses a number of open-source projects to work properly:
 - [Jwt] - To encrypt saved user data for security 
 - [Micorosoft Azure] - To convert users text to speech
 - [npm] - Nodejs package manager
-
-## Installation
-My project requires [Node.js](https://nodejs.org/) to run.
-
-Install the dependencies and devDependencies and start the server.
-
-```sh
-cd project
-npm i
-node index.js
-#Important variable can be set in .env file
-```
-For production environments...
-```sh
-npm install --production
-NODE_ENV=production node app
-```
+- 
 
 ## API's usage via POSTMAN
 https://user-images.githubusercontent.com/89502069/145890477-cc634b3b-0976-42f6-8f5d-e973c2491475.mp4
