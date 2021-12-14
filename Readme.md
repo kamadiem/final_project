@@ -123,5 +123,3 @@ This returns the following status codes in its API:
 
 More info on Azure cognitive services can be found here - https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/
 
-## License
-MIT
