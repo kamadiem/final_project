@@ -2,13 +2,13 @@
 Text-to-speech service enables your applications, tools. or devices to convert text into human-like synthesized speech. You are also able to use human-like prebuilt neural voices or create a custom voice unique to your brand. The Text-to-Speech feature of Speech service on Azure has been fully upgraded to the neural TTS engine, which uses deep neural networks to make the voices of computers nearly indistinguishable from the recordings of people. With the human-like natural prosody and clear articulation of words, neural Text-to-Speech has significantly reduced listening fatigue when you interact with AI systems.
 
 ## How to get started
-To start out you need to create or log into an Azure account. The service can be possibly free if you already have an account
+To start out you need to create or log into an Azure account. 
 
 Link: https://azure.microsoft.com/en-us/services/cognitive-services/text-to-speech/#overview
 
 - In the Azure Portal search for “Speech Services” resource to create a cognitive service, speech service which includes API endpoints like the Text-to-speeck service.
 - Select a name, subscription, location pricing tier and resource group as needed.
-- We will need the "Keys and Endpoint" information for the application (which is configured in the speech_controller.js file).
+- You will need the "Keys and Endpoint" information for the application (which is configured in the speech_controller.js file).
 
 ## Tools
 My project uses a number of open-source projects to work properly:
@@ -30,6 +30,11 @@ There are 4 routes written for my project that users can utilize
 
 http
 GET /login
+ENDPOINT: /login
+ * Send a POST request to the url - 64.227.10.104:8080/login by using the request body entailing username and password accordingly.
+ 
+ * You will get a JSON as an output that indicates you have logged in successfully. 
+
 ```
 
 | Parameter | Type | Description |
@@ -48,6 +53,12 @@ GET /login
 
 http
 GET /register
+ENDPOINT:/register
+ * Send a POST request to the url - 64.227.10.104:8080/register by using the request body entailing username and password accordingly.
+ 
+ * You will get a JSON as an output that indicates the username and password has registered successfully. If you see a "username already exists" message this still indicated it has registered.
+
+  
 ```
 
 | Parameter | Type | Description |
@@ -67,6 +78,12 @@ GET /register
 
 http
 GET /text2speech
+ENDPOINT:/text2speech?text=<insert text>
+ * Send a GET request to the url - 64.227.10.104:8080/text2speech?text=hello how are you? 
+ 
+ * You will get an audio/MPEG as an output that is identified in the text. you can change the text to any text you want to get the audio output.
+
+
 ```
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
@@ -80,6 +97,10 @@ GET /text2speech
 
 http
 GET /logout
+ENDPOINT: /logout
+ * Send a POST request to the url - 64.227.10.104:8080/logout.
+ 
+ * You will get a JSON as an output that indicates you have logged out successfully. 
 ```
 
 | Parameter | Type | Description |
