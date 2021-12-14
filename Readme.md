@@ -106,6 +106,9 @@ https://user-images.githubusercontent.com/89502069/145890477-cc634b3b-0976-42f6-
 ```
 ![image](https://user-images.githubusercontent.com/89502069/145885504-5b226332-5110-4f7e-abf0-15086bdbefec.png)
 
+	
+## Postman Collection
+
  ```
  {
 	"info": {
