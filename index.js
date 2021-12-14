@@ -43,6 +43,7 @@ const authorization = (req, res, next) => {
 app.use('/login', Login);
 app.use('/register', Register);
 app.use('/text2speech', authorization, SpeechController);
+app.use('/logout', Logout);
 
 
 app.get("/logout", authorization, (req, res) => {
