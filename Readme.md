@@ -106,7 +106,149 @@ https://user-images.githubusercontent.com/89502069/145890477-cc634b3b-0976-42f6-
 ```
 ![image](https://user-images.githubusercontent.com/89502069/145885504-5b226332-5110-4f7e-abf0-15086bdbefec.png)
 
-
+ ```
+ {
+	"info": {
+		"_postman_id": "472c95c8-a11b-4a34-bc1a-d7e1b56a292f",
+		"name": "Azure text to speech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"kamadiem@uncc.edu\",\n    \"password\" : \"Martina+4\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "64.227.10.104:8080/login",
+					"host": [
+						"64",
+						"227",
+						"10",
+						"104"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"kamadiem@uncc.edu\",\n    \"password\" : \"Martina+4\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "64.227.10.104:8080/register",
+					"host": [
+						"64",
+						"227",
+						"10",
+						"104"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "text2speech",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"kamadiem@uncc.edu\",\n    \"password\" : \"Martina+4\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "64.227.10.104:8080/text2speech?text=hi kema how are you? ",
+					"host": [
+						"64",
+						"227",
+						"10",
+						"104"
+					],
+					"port": "8080",
+					"path": [
+						"text2speech"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "hi kema how are you? "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "64.227.10.104:8080/logout",
+					"host": [
+						"64",
+						"227",
+						"10",
+						"104"
+					],
+					"port": "8080",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
+```
 
 ## Status Codes
 This returns the following status codes in its API:
