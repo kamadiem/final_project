@@ -26,11 +26,7 @@ https://user-images.githubusercontent.com/89502069/145890477-cc634b3b-0976-42f6-
 
 
 
-There are 4 routes written for my project that users can utilize 
-
-http
-GET /login
-ENDPOINT: /login
+## ENDPOINT: /login
  * Send a POST request to the url - 64.227.10.104:8080/login by using the request body entailing username and password accordingly.
  
  * You will get a JSON as an output that indicates you have logged in successfully. 
@@ -51,9 +47,7 @@ ENDPOINT: /login
 ![image](https://user-images.githubusercontent.com/89502069/145884416-3defe412-97b1-4a69-9558-f08b2425719d.png)
 
 
-http
-GET /register
-ENDPOINT:/register
+## ENDPOINT:/register
  * Send a POST request to the url - 64.227.10.104:8080/register by using the request body entailing username and password accordingly.
  
  * You will get a JSON as an output that indicates the username and password has registered successfully. If you see a "username already exists" message this still indicated it has registered.
@@ -76,9 +70,7 @@ ENDPOINT:/register
 
 
 
-http
-GET /text2speech
-ENDPOINT:/text2speech?text=<insert text>
+## ENDPOINT:/text2speech?text=<insert text>
  * Send a GET request to the url - 64.227.10.104:8080/text2speech?text=hello how are you? 
  
  * You will get an audio/MPEG as an output that is identified in the text. you can change the text to any text you want to get the audio output.
@@ -95,9 +87,8 @@ ENDPOINT:/text2speech?text=<insert text>
 ```
 ![image](https://user-images.githubusercontent.com/89502069/145885201-59d514c5-3fae-4c70-a381-abb1bc03de3b.png)
 
-http
-GET /logout
-ENDPOINT: /logout
+
+## ENDPOINT: /logout
  * Send a POST request to the url - 64.227.10.104:8080/logout.
  
  * You will get a JSON as an output that indicates you have logged out successfully. 
