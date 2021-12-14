@@ -19,7 +19,6 @@ My project uses a number of open-source projects to work properly:
 - [Jwt] - To encrypt saved user data for security 
 - [Micorosoft Azure] - To convert users text to speech
 - [npm] - Nodejs package manager
-- 
 
 ## API's usage via POSTMAN
 https://user-images.githubusercontent.com/89502069/145890477-cc634b3b-0976-42f6-8f5d-e973c2491475.mp4
