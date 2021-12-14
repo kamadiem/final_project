@@ -47,6 +47,7 @@ class Register {
                             self.response.message = err.message
                             self.writeResponse(res)
                         } else {
+                            self.response.message = "user Registred";
                             self.writeResponse(res)
                         }
                     });
