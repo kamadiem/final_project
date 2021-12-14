@@ -52,6 +52,21 @@ app.get("/logout", authorization, (req, res) => {
         .json({ message: "Successfully logged out" });
 });
 
+app.get("/", (req, res) => {
+    result  = {
+        "Login" : "64.227.10.104:8080/login",
+        "Register" : "64.227.10.104:8080/register",
+        "Text2speech" : "64.227.10.104:8080/text2speech",
+        "logout" : "64.227.10.104:8080/logout",
+        "git hub link" : "https://github.com/kamadiem/final_project/"
+        }
+    res.json(result);
+});
+
+app.get("*", (req, res) => {
+    res.json({"Error" : "404 Not found"});
+});
+
 
 // run application listening on port from .env file 
 // @param {number} port
