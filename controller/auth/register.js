@@ -2,8 +2,7 @@ const express = require('express')
 const Router = express.Router();
 const Db = require("../../classes/db")
 
-var md5 = require('md5')
-const jwt = require("jsonwebtoken");                
+var md5 = require('md5')                
 
 // Route: /auth/Register
 class Register {
