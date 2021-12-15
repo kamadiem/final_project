@@ -37,7 +37,10 @@ This returns the following status codes in its API:
 | 500 | `INTERNAL SERVER ERROR` |
 
 ## API's usage via POSTMAN
-https://user-images.githubusercontent.com/89502069/145890477-cc634b3b-0976-42f6-8f5d-e973c2491475.mp4
+
+## Host:
+
+http://64.227.10.104:8080/
 
 
 
