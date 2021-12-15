@@ -52,6 +52,8 @@ http://64.227.10.104:8080/
  * You will get a JSON as an output that indicates you have logged in successfully. 
 
 ```
+POST request to the url - 64.227.10.104:8080/login
+
 Parameter:
 {
     "username" : "",
