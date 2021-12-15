@@ -52,13 +52,13 @@ http://64.227.10.104:8080/
  * You will get a JSON as an output that indicates you have logged in successfully. 
 
 ```
-Parameter 
+Parameter:
 {
     "username" : "",
     "password" : ""
 }
 
-## Responses
+Responses:
 {
   "message" : "Logged in successfully"
 }
@@ -80,7 +80,7 @@ Parameter:
     "password" : ""
 }
 
-## Responses:
+Responses:
 {
   "message" : "user Registred"
 }
@@ -103,7 +103,7 @@ Parameter:
     "password" : ""
 }
 
-## Responses
+Responses:
 
     Audio stream output
 ```
