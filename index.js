@@ -56,7 +56,7 @@ app.get("/", (req, res) => {
     result  = {
         "Login" : "64.227.10.104:8080/login",
         "Register" : "64.227.10.104:8080/register",
-        "Text2speech" : "64.227.10.104:8080/text2speech",
+        "Text2speech" : "64.227.10.104:8080/text2speech?text=***INSERT TEXT***",
         "logout" : "64.227.10.104:8080/logout",
         "git hub link" : "https://github.com/kamadiem/final_project/"
         }
