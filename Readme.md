@@ -10,6 +10,9 @@ Link: https://azure.microsoft.com/en-us/services/cognitive-services/text-to-spee
 - Select a name, subscription, location pricing tier and resource group as needed.
 - You will need the "Keys and Endpoint" information for the application (which is configured in the speech_controller.js file).
 
+<img width="604" alt="Screen Shot 2021-12-14 at 9 17 15 PM" src="https://user-images.githubusercontent.com/89502069/146110908-c1cab353-2998-4d44-8e86-cd64080f3eff.png">
+
+
 ## Tools
 My project uses a number of open-source projects to work properly:
 
