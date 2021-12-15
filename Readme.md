@@ -19,6 +19,7 @@ My project uses a number of open-source projects to work properly:
 - [Jwt] - To encrypt saved user data for security 
 - [Micorosoft Azure] - To convert users text to speech
 - [npm] - Nodejs package manager
+- [dotenv] - to seperate secrets from source code and share source code while allowing other people to create their own.
 
 ## Status Codes
 This returns the following status codes in its API:
