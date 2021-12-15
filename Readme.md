@@ -52,7 +52,6 @@ http://64.227.10.104:8080/
  * You will get a JSON as an output that indicates you have logged in successfully. 
 
 ```
-
 Parameter 
 {
     "username" : "",
@@ -60,7 +59,6 @@ Parameter
 }
 
 ## Responses
-```
 {
   "message" : "Logged in successfully"
 }
@@ -83,7 +81,6 @@ Parameter:
 }
 
 ## Responses:
-```
 {
   "message" : "user Registred"
 }
@@ -93,14 +90,14 @@ Parameter:
 
 
 ## ENDPOINT:/text2speech?text=<insert text>
- * Send a GET request to the url - 64.227.10.104:8080/text2speech?text=<INSERT YOUR TEXT> 
+ * Send a GET request to the url - 64.227.10.104:8080/text2speech?text=hello how are you?
  
  * You will get an audio/MPEG as an output that is identified in the text. you can change the text to any text you want to get the audio output.
 
 
 ```
 Parameter: 
-
+ 
 {
     "username" : "",
     "password" : ""
@@ -117,6 +114,7 @@ Parameter:
  * Send a POST request to the url - 64.227.10.104:8080/logout.
  
  * You will get a JSON as an output that indicates you have logged out successfully. 
+ 
 ```
 Parameter: 
 
@@ -125,7 +123,6 @@ Parameter:
 }
 
 ## Responses:
-```
 {
   "message" : "Successfully logged out"
 }
