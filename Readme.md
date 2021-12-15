@@ -63,9 +63,10 @@ Parameter:
 Responses:
 {
   "message" : "user Registred"
+  "token": ""
 }
 
- * If a similar username is indicated then you get a response "username already exists"
+ * If a similar username is entered then you get a response "username already exists"
 
 ```
 
@@ -88,7 +89,11 @@ Parameter:
 Responses:
 {
   "message" : "Logged in successfully"
+  "token": ""
 }
+
+* the purpose of the token is to access the text2speech endpoint 
+
 ```
 
 
@@ -111,6 +116,8 @@ Parameter:
 Responses:
 
     Audio stream output
+    
+    ** if an error message shows, copy the token provided in the login response in to the text2speech header. The KEY parameter is 'x-access-token' and the VALUE is the login token
 ```
 
 
