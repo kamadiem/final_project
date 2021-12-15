@@ -49,6 +49,7 @@ class Login {
                     self.writeResponse(res)
                 } else {
                     self.response.message = "you are logged in"
+                    const token = jwt.sign({ id: row.id, username: row.username }, process.env.JWT_SECRET);
                     res.cookie("access_token", token, {}).status(200).json({ message: "Logged in successfully" });
                 }
             })
