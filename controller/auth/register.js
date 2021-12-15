@@ -1,28 +1,30 @@
 const express = require('express')
 const Router = express.Router();
 const Db = require("../../classes/db")
+
 var md5 = require('md5')
 const jwt = require("jsonwebtoken");
 
-
-// Route: /auth/login
-class Login {
-
+// Route: /auth/Register
+class Register {
     constructor() {
         this.response = {
             message: "ok"
         }
-        this.status = 200
-        // iniitalize the databae
+        // init database
         this.db = new Db().getDb()
+        this.status = 200
 
         // iniitalize the router
         Router.post('/', this.Post);
     }
 
-    // Post method for the login route
-    Post = (req, res) => {
+
+    // Post Method
+    Post = async (req, res) => {
+        this.status = 201
         try {
+
             // check the required fields
             if (!req.body.username) {
                 this.status = 400
@@ -35,42 +37,39 @@ class Login {
                 this.writeResponse(res)
             }
 
-            // check if the user exist
             var self = this;
-            self.db.get(`select *  from user where username = ? AND password = ?`, [req.body.username, md5(req.body.password)], (err, row) => {
-                if (err) {
-                    self.status = 400
-                    self.response.message = err.message
-                    self.writeResponse(res)
-                }
+            // check if the user exist
+            self.db.get(`select COUNT(*) as count from user where username = ?`, [req.body.username], (err, row) => {
                 if (row.count === 0) {
-                    self.response.message = "user not found"
-                    self.status = 400
-                    self.writeResponse(res)
+                    // create the user
+                    self.db.run('INSERT INTO user (username, password) VALUES (?,?)', [req.body.username, md5(req.body.password)], function (err, result) {
+                        if (err) {
+                            self.status = 400
+                            self.response.message = err.message
+                            self.writeResponse(res)
+                        } else {
+                            const token = jwt.sign({ id: row.id, username: row.username }, process.env.JWT_SECRET);
+                            self.response.message = "user Registred";
+                            self.response.token = token;
+                            self.writeResponse(res)
+                        }
+                    });
                 } else {
-                    self.response.message = "you are logged in"
-                    const token = jwt.sign({ id: row.id, username: row.username }, process.env.JWT_SECRET);
-                    res.cookie("access_token", token, {}).status(200).json({ message: "Logged in successfully", token: token });
+                    self.status = 400
+                    self.response.message = "username already exists"
+                    self.writeResponse(res)
                 }
-            })
+            });
 
         } catch (err) {
-            // error handling
             this.response.message = err.message
             this.status = 500
-            console.error(err.message)
-            this.writeResponse(res)
         }
     }
-
-
-    // write response
     writeResponse = (res) => {
         res.status(this.status).json(this.response);
     }
-
 }
-
-new Login();
+new Register();
 
 module.exports = Router;
