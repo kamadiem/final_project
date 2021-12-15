@@ -1,40 +1,10 @@
-{
+ {
 	"info": {
-		"_postman_id": "472c95c8-a11b-4a34-bc1a-d7e1b56a292f",
+		"_postman_id": "bf5ee2f6-7a46-479b-be3c-a4d2a045af77",
 		"name": "Azure text to speech",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
-		{
-			"name": "Login",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"username\" : \"kamadiem@uncc.edu\",\n    \"password\" : \"Martina+4\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "64.227.10.104:8080/login",
-					"host": [
-						"64",
-						"227",
-						"10",
-						"104"
-					],
-					"port": "8080",
-					"path": [
-						"login"
-					]
-				}
-			},
-			"response": []
-		},
 		{
 			"name": "Register",
 			"request": {
@@ -42,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"username\" : \"kamadiem@uncc.edu\",\n    \"password\" : \"Martina+4\"\n}",
+					"raw": "{\n    \"username\" : \"xyz12345@uncc.edu\",\n    \"password\" : \"12345\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -60,6 +30,36 @@
 					"port": "8080",
 					"path": [
 						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"xyz12345@uncc.edu\",\n    \"password\" : \"12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "64.227.10.104:8080/login",
+					"host": [
+						"64",
+						"227",
+						"10",
+						"104"
+					],
+					"port": "8080",
+					"path": [
+						"login"
 					]
 				}
 			},
