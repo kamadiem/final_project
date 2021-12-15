@@ -69,7 +69,9 @@ Responses:
 ## ENDPOINT: /register
  * Send a POST request to the url - 64.227.10.104:8080/register by using the request body entailing username and password accordingly.
  
- * You will get a JSON as an output that indicates the username and password has registered successfully. If you see a "username already exists" message this still indicated it has registered.
+ * You will get a JSON as an output that indicates the "user registered"
+ 
+ * If a similar username is indicated then you get a response "username already exists"
 
   
 ```
@@ -84,6 +86,8 @@ Responses:
   "message" : "user Registred"
 }
 ```
+![Screen Shot 2021-12-15 at 9 26 26 AM](https://user-images.githubusercontent.com/89502069/146204911-fe96da52-b628-414b-8e65-d2814e53d522.png)
+
 ![image](https://user-images.githubusercontent.com/89502069/145885068-b6b7d91a-8309-4a83-80ea-2fe3d9b8eab6.png)
 
 
