@@ -111,6 +111,10 @@ Responses:
 ```
 ![image](https://user-images.githubusercontent.com/89502069/145885201-59d514c5-3fae-4c70-a381-abb1bc03de3b.png)
 
+![Screen Shot 2021-12-15 at 9 31 08 AM](https://user-images.githubusercontent.com/89502069/146208245-ffec03e7-5e69-4a83-96e6-f6f0f126c96c.png)
+
+
+
 
 ## ENDPOINT: /logout
  * Send a POST request to the url - 64.227.10.104:8080/logout
