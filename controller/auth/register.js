@@ -1,30 +1,28 @@
 const express = require('express')
 const Router = express.Router();
 const Db = require("../../classes/db")
-
 var md5 = require('md5')
 const jwt = require("jsonwebtoken");
 
-// Route: /auth/Register
-class Register {
+
+// Route: /auth/login
+class Login {
+
     constructor() {
         this.response = {
             message: "ok"
         }
-        // init database
-        this.db = new Db().getDb()
         this.status = 200
+        // iniitalize the databae
+        this.db = new Db().getDb()
 
         // iniitalize the router
         Router.post('/', this.Post);
     }
 
-
-    // Post Method
-    Post = async (req, res) => {
-        this.status = 201
+    // Post method for the login route
+    Post = (req, res) => {
         try {
-
             // check the required fields
             if (!req.body.username) {
                 this.status = 400
@@ -37,39 +35,42 @@ class Register {
                 this.writeResponse(res)
             }
 
-            var self = this;
             // check if the user exist
-            self.db.get(`select COUNT(*) as count from user where username = ?`, [req.body.username], (err, row) => {
-                if (row.count === 0) {
-                    // create the user
-                    self.db.run('INSERT INTO user (username, password) VALUES (?,?)', [req.body.username, md5(req.body.password)], function (err, result) {
-                        if (err) {
-                            self.status = 400
-                            self.response.message = err.message
-                            self.writeResponse(res)
-                        } else {
-                            const token = jwt.sign({ id: row.id, username: row.username }, process.env.JWT_SECRET);
-                            self.response.message = "user Registred";
-                            self.response.token = token;
-                            self.writeResponse(res)
-                        }
-                    });
-                } else {
+            var self = this;
+            self.db.get(`select *  from user where username = ? AND password = ?`, [req.body.username, md5(req.body.password)], (err, row) => {
+                if (err) {
                     self.status = 400
-                    self.response.message = "username already exists"
+                    self.response.message = err.message
                     self.writeResponse(res)
                 }
-            });
+                if (row.count === 0) {
+                    self.response.message = "user not found"
+                    self.status = 400
+                    self.writeResponse(res)
+                } else {
+                    self.response.message = "you are logged in"
+                    const token = jwt.sign({ id: row.id, username: row.username }, process.env.JWT_SECRET);
+                    res.cookie("access_token", token, {}).status(200).json({ message: "Logged in successfully", token: token });
+                }
+            })
 
         } catch (err) {
+            // error handling
             this.response.message = err.message
             this.status = 500
+            console.error(err.message)
+            this.writeResponse(res)
         }
     }
+
+
+    // write response
     writeResponse = (res) => {
         res.status(this.status).json(this.response);
     }
+
 }
-new Register();
+
+new Login();
 
 module.exports = Router;
