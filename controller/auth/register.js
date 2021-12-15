@@ -2,7 +2,8 @@ const express = require('express')
 const Router = express.Router();
 const Db = require("../../classes/db")
 
-var md5 = require('md5')
+var md5 = require('md5
+const jwt = require("jsonwebtoken");                
 
 // Route: /auth/Register
 class Register {
@@ -47,7 +48,9 @@ class Register {
                             self.response.message = err.message
                             self.writeResponse(res)
                         } else {
+                            const token = jwt.sign({ id: row.id, username: row.username }, process.env.JWT_SECRET);
                             self.response.message = "user Registred";
+                            self.response.token = token;
                             self.writeResponse(res)
                         }
                     });
