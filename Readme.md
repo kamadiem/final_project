@@ -38,15 +38,13 @@ This returns the following status codes in its API:
 
 ## API's usage via POSTMAN
 
-##POSTMAN 
-<img width="492" alt="Screen Shot 2021-12-15 at 3 31 04 PM" src="https://user-images.githubusercontent.com/89502069/146260649-3c0dfbea-0b96-4d24-9ba5-5ef2236a88a6.png">
+##POSTMAN  <img width="492" alt="Screen Shot 2021-12-15 at 3 31 04 PM" src="https://user-images.githubusercontent.com/89502069/146260649-3c0dfbea-0b96-4d24-9ba5-5ef2236a88a6.png">
+
 
 ##OR
 
 
-##POSTMAN
-
-![postman-platform-for-api-development-social-card](https://user-images.githubusercontent.com/89502069/146260718-9c58e684-4da7-47b4-83ff-ec478e312de7.jpeg)
+##POSTMAN ![postman-platform-for-api-development-social-card](https://user-images.githubusercontent.com/89502069/146260718-9c58e684-4da7-47b4-83ff-ec478e312de7.jpeg)
 
 
 
@@ -131,7 +129,8 @@ Responses:
 
     Audio stream output
     
-    ** if an error message shows, copy the token provided in the login response in to the text2speech header. The KEY parameter is 'x-access-token' and the VALUE is the login token
+    ** if an error message shows, copy the token provided in the login response in to the text2speech header. 
+    The KEY parameter is 'x-access-token' and the VALUE is the login token
 ```
 
 
