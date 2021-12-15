@@ -66,7 +66,7 @@ Responses:
 ![image](https://user-images.githubusercontent.com/89502069/145884416-3defe412-97b1-4a69-9558-f08b2425719d.png)
 
 
-## ENDPOINT:/register
+## ENDPOINT: /register
  * Send a POST request to the url - 64.227.10.104:8080/register by using the request body entailing username and password accordingly.
  
  * You will get a JSON as an output that indicates the username and password has registered successfully. If you see a "username already exists" message this still indicated it has registered.
@@ -88,7 +88,7 @@ Responses:
 
 
 
-## ENDPOINT:/text2speech?text=
+## ENDPOINT: /text2speech?text=
  * Send a GET request to the url - 64.227.10.104:8080/text2speech?text=hello how are you?
  
  * You will get an audio/MPEG as an output that is identified in the text. you can change the text to any text you want to get the audio output.
