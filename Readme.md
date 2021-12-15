@@ -143,7 +143,7 @@ https://user-images.githubusercontent.com/89502069/146257685-b3b1766b-b09c-4262-
 ## ENDPOINT: /logout 
  
 ```
-POST request to the url - 64.227.10.104:8080/logout
+GET request to the url - 64.227.10.104:8080/logout
 
 Parameter: 
 {
