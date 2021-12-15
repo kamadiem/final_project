@@ -44,6 +44,11 @@ http://64.227.10.104:8080/
 
 
 
+https://user-images.githubusercontent.com/89502069/146257519-a167744b-69e3-476e-bc4a-cdff0fcf095b.mp4
+
+
+
+
 ## ENDPOINT: /register
   
 ```
@@ -65,6 +70,10 @@ Responses:
 ```
 
 
+https://user-images.githubusercontent.com/89502069/146257589-491d3ca0-0895-40a1-a402-38a731adf34d.mp4
+
+
+
 ## ENDPOINT: /login
 
 ```
@@ -84,8 +93,7 @@ Responses:
 
 
 
-
-
+https://user-images.githubusercontent.com/89502069/146257628-a60f081b-0c36-4e4c-9255-6ae7a3d88849.mp4
 
 
 
@@ -107,6 +115,9 @@ Responses:
 
 
 
+https://user-images.githubusercontent.com/89502069/146257685-b3b1766b-b09c-4262-84fd-7b59620a0e22.mp4
+
+
 
 
 ## ENDPOINT: /logout 
@@ -124,6 +135,10 @@ Parameter:
   "message" : "Successfully logged out"
 }
 ```
+
+
+
+https://user-images.githubusercontent.com/89502069/146257723-c8b9e851-945b-4700-b9d1-aa24ffa5ad04.mp4
 
 
 
