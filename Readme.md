@@ -44,27 +44,6 @@ http://64.227.10.104:8080/
 
 
 
-
-
-## ENDPOINT: /login
-
-```
-POST request to the url - 64.227.10.104:8080/login
-
-Parameter:
-{
-    "username" : "",
-    "password" : ""
-}
-
-Responses:
-{
-  "message" : "Logged in successfully"
-}
-```
-![image](https://user-images.githubusercontent.com/89502069/145884416-3defe412-97b1-4a69-9558-f08b2425719d.png)
-
-
 ## ENDPOINT: /register
   
 ```
@@ -84,10 +63,28 @@ Responses:
  * If a similar username is indicated then you get a response "username already exists"
 
 ```
-![Screen Shot 2021-12-15 at 10 26 17 AM](https://user-images.githubusercontent.com/89502069/146214811-d1173b4a-ab89-446c-991c-bd3f842d24aa.png)
 
 
-![Screen Shot 2021-12-15 at 9 30 38 AM](https://user-images.githubusercontent.com/89502069/146214456-31ffe7ee-5cb7-4e26-889d-04ed374d15a2.png)
+## ENDPOINT: /login
+
+```
+POST request to the url - 64.227.10.104:8080/login
+
+Parameter:
+{
+    "username" : "",
+    "password" : ""
+}
+
+Responses:
+{
+  "message" : "Logged in successfully"
+}
+```
+
+
+
+
 
 
 
@@ -107,9 +104,7 @@ Responses:
 
     Audio stream output
 ```
-![image](https://user-images.githubusercontent.com/89502069/145885201-59d514c5-3fae-4c70-a381-abb1bc03de3b.png)
 
-![Screen Shot 2021-12-15 at 9 31 08 AM](https://user-images.githubusercontent.com/89502069/146208245-ffec03e7-5e69-4a83-96e6-f6f0f126c96c.png)
 
 
 
@@ -129,7 +124,7 @@ Parameter:
   "message" : "Successfully logged out"
 }
 ```
-![image](https://user-images.githubusercontent.com/89502069/145885504-5b226332-5110-4f7e-abf0-15086bdbefec.png)
+
 
 
 
