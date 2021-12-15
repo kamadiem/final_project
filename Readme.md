@@ -53,15 +53,16 @@ http://64.227.10.104:8080/
 
 ```
 
-| Parameter | Type | Description |
-| :--- | :--- | :--- |
-| `username` | `string` | **Required**. your email |
-| `password` | `string` | **Required** |
+Parameter 
+{
+    "username" : "",
+    "password" : ""
+}
 
 ## Responses
-```javascript
+```
 {
-  "message" : string,
+  "message" : "Logged in successfully"
 }
 ```
 ![image](https://user-images.githubusercontent.com/89502069/145884416-3defe412-97b1-4a69-9558-f08b2425719d.png)
@@ -74,16 +75,17 @@ http://64.227.10.104:8080/
 
   
 ```
+Parameter: 
 
-| Parameter | Type | Description |
-| :--- | :--- | :--- |
-| `username` | `string` | **Required**. your email |
-| `password` | `string` | **Required** |
-
-## Responses
-```javascript
 {
-  "message" : string,
+    "username" : "",
+    "password" : ""
+}
+
+## Responses:
+```
+{
+  "message" : "user Registred"
 }
 ```
 ![image](https://user-images.githubusercontent.com/89502069/145885068-b6b7d91a-8309-4a83-80ea-2fe3d9b8eab6.png)
@@ -91,15 +93,18 @@ http://64.227.10.104:8080/
 
 
 ## ENDPOINT:/text2speech?text=<insert text>
- * Send a GET request to the url - 64.227.10.104:8080/text2speech?text=hello how are you? 
+ * Send a GET request to the url - 64.227.10.104:8080/text2speech?text=<INSERT YOUR TEXT> 
  
  * You will get an audio/MPEG as an output that is identified in the text. you can change the text to any text you want to get the audio output.
 
 
 ```
-| Parameter | Type | Description |
-| :--- | :--- | :--- |
-| `text` | `string` | **Required**. your email |
+Parameter: 
+
+{
+    "username" : "",
+    "password" : ""
+}
 
 ## Responses
 
@@ -113,16 +118,16 @@ http://64.227.10.104:8080/
  
  * You will get a JSON as an output that indicates you have logged out successfully. 
 ```
+Parameter: 
 
-| Parameter | Type | Description |
-| :--- | :--- | :--- |
-| `username` | `string` | **Required**. your email |
-| `password` | `string` | **Required** |
-
-## Responses
-```javascript
 {
-  "message" : string,
+    n/a
+}
+
+## Responses:
+```
+{
+  "message" : "Successfully logged out"
 }
 ```
 ![image](https://user-images.githubusercontent.com/89502069/145885504-5b226332-5110-4f7e-abf0-15086bdbefec.png)
