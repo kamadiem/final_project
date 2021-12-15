@@ -88,7 +88,7 @@ Responses:
 
 
 
-## ENDPOINT:/text2speech?text=<insert text>
+## ENDPOINT:/text2speech?text=
  * Send a GET request to the url - 64.227.10.104:8080/text2speech?text=hello how are you?
  
  * You will get an audio/MPEG as an output that is identified in the text. you can change the text to any text you want to get the audio output.
@@ -109,7 +109,7 @@ Responses:
 
 
 ## ENDPOINT: /logout
- * Send a POST request to the url - 64.227.10.104:8080/logout.
+ * Send a POST request to the url - 64.227.10.104:8080/logout
  
  * You will get a JSON as an output that indicates you have logged out successfully. 
  
