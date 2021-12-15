@@ -84,7 +84,8 @@ Responses:
  * If a similar username is indicated then you get a response "username already exists"
 
 ```
-![Screen Shot 2021-12-15 at 9 26 26 AM](https://user-images.githubusercontent.com/89502069/146204911-fe96da52-b628-414b-8e65-d2814e53d522.png)
+![Screen Shot 2021-12-15 at 10 26 17 AM](https://user-images.githubusercontent.com/89502069/146214811-d1173b4a-ab89-446c-991c-bd3f842d24aa.png)
+
 
 ![Screen Shot 2021-12-15 at 9 30 38 AM](https://user-images.githubusercontent.com/89502069/146214456-31ffe7ee-5cb7-4e26-889d-04ed374d15a2.png)
 
