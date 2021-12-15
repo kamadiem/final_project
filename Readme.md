@@ -74,7 +74,6 @@ Responses:
   
 ```
 Parameter: 
-
 {
     "username" : "",
     "password" : ""
@@ -97,7 +96,6 @@ Responses:
 
 ```
 Parameter: 
- 
 {
     "username" : "",
     "password" : ""
@@ -117,7 +115,6 @@ Responses:
  
 ```
 Parameter: 
-
 {
     n/a
 }
