@@ -47,9 +47,6 @@ http://64.227.10.104:8080/
 
 
 ## ENDPOINT: /login
- * Send a POST request to the url - 64.227.10.104:8080/login by using the request body entailing username and password accordingly.
- 
- * You will get a JSON as an output that indicates you have logged in successfully. 
 
 ```
 POST request to the url - 64.227.10.104:8080/login
@@ -69,14 +66,10 @@ Responses:
 
 
 ## ENDPOINT: /register
- * Send a POST request to the url - 64.227.10.104:8080/register by using the request body entailing username and password accordingly.
- 
- * You will get a JSON as an output that indicates the "user registered"
- 
- * If a similar username is indicated then you get a response "username already exists"
-
   
 ```
+POST request to the url - 64.227.10.104:8080/register
+
 Parameter: 
 {
     "username" : "",
@@ -87,6 +80,9 @@ Responses:
 {
   "message" : "user Registred"
 }
+
+ If a similar username is indicated then you get a response "username already exists"
+
 ```
 ![Screen Shot 2021-12-15 at 9 26 26 AM](https://user-images.githubusercontent.com/89502069/146204911-fe96da52-b628-414b-8e65-d2814e53d522.png)
 
@@ -95,12 +91,10 @@ Responses:
 
 
 ## ENDPOINT: /text2speech?text=
- * Send a GET request to the url - 64.227.10.104:8080/text2speech?text=hello how are you?
- 
- * You will get an audio/MPEG as an output that is identified in the text. you can change the text to any text you want to get the audio output.
-
 
 ```
+GET request to the url - 64.227.10.104:8080/text2speech?text=hello how are you?
+
 Parameter: 
 {
     "username" : "",
@@ -118,12 +112,11 @@ Responses:
 
 
 
-## ENDPOINT: /logout
- * Send a POST request to the url - 64.227.10.104:8080/logout
- 
- * You will get a JSON as an output that indicates you have logged out successfully. 
+## ENDPOINT: /logout 
  
 ```
+POST request to the url - 64.227.10.104:8080/logout
+
 Parameter: 
 {
     n/a
