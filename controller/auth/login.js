@@ -49,7 +49,7 @@ class Login {
                     self.writeResponse(res)
                 } else {
                     self.response.message = "you are logged in"
-                    res.cookie("access_token", token, {}).status(200).json({ message: "Logged in successfully", token: token });
+                    res.cookie("access_token", token, {}).status(200).json({ message: "Logged in successfully"});
                 }
             })
 
